@@ -4,15 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Este sitio web te permitirá encontrar Gifs animados, imágenes y videos. Fuentes: Giphy y Pixabay">
 
     <title>Images,Video&Gifs</title>
 
     <!-- Styles -->
 
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+    {{--
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
+    <script src="https://cdn.tailwindcss.com"></script>
 
     @livewireStyles
+
 </head>
 
 <body class="antialiased">
