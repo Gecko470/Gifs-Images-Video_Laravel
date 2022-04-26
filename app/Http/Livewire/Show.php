@@ -56,7 +56,7 @@ class Show extends Component
     public function buscarGifs()
     {
 
-        $this->respuesta = Http::get("https://api.giphy.com/v1/gifs/search?api_key=oyRB1czUtgUqAGWGUfET37v9KnoYq3oa&q=" . $this->termino . "&limit=45");
+        $this->respuesta = Http::get("https://api.giphy.com/v1/gifs/search?mi_api_key&q=" . $this->termino . "&limit=45");
         $this->datos = $this->respuesta->json();
 
         if ($this->datos["data"] == []) {
@@ -72,10 +72,10 @@ class Show extends Component
     {
         if ($this->termino == null) {
 
-            $this->respuesta = Http::get("https://pixabay.com/api/?key=25077191-8ef3e88a7eedef42519d4205e");
+            $this->respuesta = Http::get("https://pixabay.com/api/?key=");
         } else {
 
-            $this->respuesta = Http::get("https://pixabay.com/api/?key=25077191-8ef3e88a7eedef42519d4205e&q=" . $this->termino);
+            $this->respuesta = Http::get("https://pixabay.com/api/?key=&q=" . $this->termino);
         }
 
         $this->datos = $this->respuesta->json();
