@@ -93,10 +93,10 @@ class Show extends Component
     {
         if ($this->termino == null) {
 
-            $this->respuesta = Http::get("https://pixabay.com/api/videos/?key=25077191-8ef3e88a7eedef42519d4205e");
+            $this->respuesta = Http::get("https://pixabay.com/api/videos/?key=");
         } else {
 
-            $this->respuesta = Http::get("https://pixabay.com/api/videos/?key=25077191-8ef3e88a7eedef42519d4205e&q=" . $this->termino);
+            $this->respuesta = Http::get("https://pixabay.com/api/videos/?key=&q=" . $this->termino);
         }
 
         $this->datos = $this->respuesta->json();
